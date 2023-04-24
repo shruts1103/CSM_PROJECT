@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Encode</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="steganography.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <style>
+    body {
+      background: linear-gradient(#175dbe, #21D4FD);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a href="./encode.html" class="ui Tertiary button">ENCODE</a>
+      <a href="./decode.html" class="ui secondary button">DECODE</a>
+    </header>
+  </div>
+
+  <div class="contain">
+    <div class="">
+      <input class="ui primary button" type="file" name="pic" accept="image/*" onchange="readURL(this);" /><br>
+      <div class="ui input">
+        <br><input class="text" id="key" type="password" placeholder="Enter key" required />
+        <label for="key"><button>Pass Key</button></label><br>
+        <input class="text" id="message" type="text" placeholder="Enter Message" required />
+      </div>
+
+      <button class="ui secondary button" onclick="hideText()">
+        Hide Message Into Image
+      </button>
+
+      <div class="img-contain">
+        <div class="img1">
+          <h5>Image Source</h5>
+
+          <img id="image1" src="" alt="" />
+        </div>
+
+        <div class="img1">
+          <h5>Message Encoded Image</h5>
+          <img id="image2" src="" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="ui input">
+      <input class="text" id="email" type="email" placeholder="Share To This email" required />
+
+    </div>
+    <br>
+    <button class="ui secondary button" name="saveImage" onclick="saveImg()">Download Image</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

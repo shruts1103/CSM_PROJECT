@@ -1,0 +1,49 @@
+.contain {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.contain button {
+    padding: 10px 10px;
+
+}
+header a {
+    color: red;
+}
+
+.img-contain {
+    margin-top: 7rem;
+    display: row;
+}
+
+.img1 {
+    margin-right: 15rem;
+    margin-bottom: 10rem;
+}
+
+img {
+    width: 350px;
+}
+
+/* button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+
+.opa {
+    opacity: 0;
+    width: 0px;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 10vw;
+    margin-top: 100dp;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
